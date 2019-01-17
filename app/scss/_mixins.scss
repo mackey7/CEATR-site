@@ -1,0 +1,43 @@
+@import 'animation';
+@mixin button_white {
+    background: transparent;
+    border: 1px solid $white;
+    color: $white;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    &:hover {
+        background: rgba(250, 250, 250, 0.212);
+        border: 2px solid $white;
+        -webkit-animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+        animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-perspective: 1000px;
+        perspective: 1000px;
+    }
+}
+
+@mixin button_blue {
+    background: transparent;
+    border: 1px solid $blue;
+    color: $blue;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    &:hover {
+        background: rgba(0, 126, 230, 0.226);
+        -webkit-animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+        animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-perspective: 1000px;
+        perspective: 1000px;
+    }
+}
